@@ -8,8 +8,8 @@
         //-------xml parxer(background thread사용)---------------
         equeue.async {
 		for dic in tempItems {
-			// 상세 목록 파싱
-			self.getDetail(idx: dic["idx"]!)
+		// 상세 목록 파싱
+		    self.getDetail(idx: dic["idx"]!)
         //-------tableview(main thread사용(ui는 main thread 사용 필수))---
             DispatchQueue.main.async {
                 self.tableView.reloadData()
