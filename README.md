@@ -1,4 +1,27 @@
-# Busan-Public-Free-Food-Map-Static-Table-Cell
+
+# Thread Control
+<pre><code>
+//-----------------thread controll----------------------
+        //-------DispatchQueue선언(멀티 thread)-------------------
+	//qos 속성에 따라 우선순위 변경
+        let equeue = DispatchQueue(label:"com.yangsoo.queue", qos:DispatchQoS.userInitiated)
+        //-------xml parxer(background thread사용)---------------
+        equeue.async {
+		for dic in tempItems {
+		// 상세 목록 파싱
+		    self.getDetail(idx: dic["idx"]!)
+        //-------tableview(main thread사용(ui는 main thread 사용 필수))---
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+          }
+        }
+//-----------------thread controll------------------------
+</code>
+</pre>
+
+
+# Static TableViewCell
 * SingleMapTableViewController의 TableView Cell의 속성을 static cell로 사용
 * 이때 각 static cell을 outlet 변수를 설정하여 해당 값(급식일, 급식대상, 운영기관, 전화번호)을 넣는다.
 <pre><code>  
