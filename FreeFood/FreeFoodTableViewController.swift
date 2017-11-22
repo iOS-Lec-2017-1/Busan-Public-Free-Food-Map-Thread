@@ -130,9 +130,11 @@ class FreeFoodTableViewController: UITableViewController,XMLParserDelegate {
             }
           }
         }
+        
+        let temp = items as NSArray  // NSArry는 화일로 저장하기 위함
+        temp.write(to: url, atomically: true)
+
         //-----------------thread controll------------------------
-		let temp = items as NSArray  // NSArry는 화일로 저장하기 위함
-		temp.write(to: url, atomically: true)
         
 	}
 

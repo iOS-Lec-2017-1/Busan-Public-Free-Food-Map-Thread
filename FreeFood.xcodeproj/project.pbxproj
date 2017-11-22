@@ -14,6 +14,7 @@
 		0514450E1FAAAF9A00B20DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0514450C1FAAAF9A00B20DF5 /* LaunchScreen.storyboard */; };
 		051445161FAAAFF700B20DF5 /* FreeFoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051445151FAAAFF700B20DF5 /* FreeFoodTableViewController.swift */; };
 		05366ABB1FBEFA7600416659 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05366ABA1FBEFA7600416659 /* CoreLocation.framework */; };
+		0556BE0C1FC4FE68000DC2FD /* free_meal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0556BE0B1FC4FE68000DC2FD /* free_meal.png */; };
 		055D503E1FBDD161005DB8D5 /* SingleMapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D503D1FBDD161005DB8D5 /* SingleMapTableViewController.swift */; };
 		05A6A0EF1FB867A0000472F9 /* TotalMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A0EE1FB867A0000472F9 /* TotalMapViewController.swift */; };
 		05A6A0F21FB8681A000472F9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A6A0F11FB8681A000472F9 /* MapKit.framework */; };
@@ -30,6 +31,7 @@
 		0514450F1FAAAF9A00B20DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		051445151FAAAFF700B20DF5 /* FreeFoodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFoodTableViewController.swift; sourceTree = "<group>"; };
 		05366ABA1FBEFA7600416659 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0556BE0B1FC4FE68000DC2FD /* free_meal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = free_meal.png; sourceTree = "<group>"; };
 		055D503D1FBDD161005DB8D5 /* SingleMapTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleMapTableViewController.swift; path = ../SingleMapTableViewController.swift; sourceTree = "<group>"; };
 		05A6A0EE1FB867A0000472F9 /* TotalMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalMapViewController.swift; sourceTree = "<group>"; };
 		05A6A0F11FB8681A000472F9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -69,6 +71,7 @@
 		051445021FAAAF9A00B20DF5 /* FreeFood */ = {
 			isa = PBXGroup;
 			children = (
+				0556BE0B1FC4FE68000DC2FD /* free_meal.png */,
 				055D503D1FBDD161005DB8D5 /* SingleMapTableViewController.swift */,
 				05A6A0F31FB878BA000472F9 /* pin-map-7.png */,
 				051445031FAAAF9A00B20DF5 /* AppDelegate.swift */,
@@ -152,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0556BE0C1FC4FE68000DC2FD /* free_meal.png in Resources */,
 				0514450E1FAAAF9A00B20DF5 /* LaunchScreen.storyboard in Resources */,
 				0514450B1FAAAF9A00B20DF5 /* Assets.xcassets in Resources */,
 				05A6A0F41FB878BA000472F9 /* pin-map-7.png in Resources */,
