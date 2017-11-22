@@ -13,6 +13,8 @@
         //-------tableview(main thread사용(ui는 main thread 사용 필수))---
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+		let temp = self.items as NSArray  // NSArry는 화일로 저장하기 위함
+                temp.write(to: url, atomically: true)
             }
           }
         }
