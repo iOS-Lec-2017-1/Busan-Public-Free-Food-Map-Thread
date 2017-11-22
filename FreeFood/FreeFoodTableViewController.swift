@@ -119,7 +119,8 @@ class FreeFoodTableViewController: UITableViewController,XMLParserDelegate {
         //-----------------thread controll----------------------
         //-------DispatchQueue선언(멀티 thread)-------------------
         //qos 속성에 따라 우선순위 변경
-        let equeue = DispatchQueue(label:"com.yangsoo.queue", qos:DispatchQoS.userInitiated)        //-------xml parxer(background thread사용)---------------
+        let equeue = DispatchQueue(label:"com.yangsoo.queue", qos:DispatchQoS.userInitiated)
+        //-------xml parxer(background thread사용)---------------
         equeue.async {
 		for dic in tempItems {
 			// 상세 목록 파싱
